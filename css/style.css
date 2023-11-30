@@ -1,0 +1,232 @@
+*{
+    background-color: black;
+}
+
+html{
+    --color-princ:rgb(53, 137, 205);
+    --color-secun:rgb(67, 3, 85);
+    --color-terce:rgb(154, 205, 50);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 0 0;
+}
+
+.container_header{
+    width: 100%;
+    height: 90%;  
+    padding-top: 15px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+nav{
+    position: sticky;
+    overflow: hidden ;
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem var(--color-princ); 
+}
+
+.main-nav{
+    width: 80%;
+    height: 6%;
+    display: flex;
+    justify-content: space-between;  
+    padding: 1rem 10%;
+    background-color: black;
+    }
+
+.main-nav a{
+    text-decoration: none;
+    margin-right: 20px;    
+    display: inline-block;
+    color: var(--color-secun);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.main-nav a:hover{
+    color: var(--color-princ);
+
+}
+/*------------------Estilos Contacta-------------------------*/
+
+.container{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contacta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-princ);
+    font-size: 18px;
+    padding-top: 20px;   
+}
+
+.contacta img{
+    margin: 15px 30px;
+    width: 50px;
+    height: 50px;    
+}
+
+.contacta a{
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.container_contacta{
+    width: 50%;   
+    color: white;
+    background-color: black;
+}
+
+.container_contacta h2{
+    color: var(--color-terce);
+    font-size: 30px;
+    margin-left: 80%;
+    padding-top: 20px;
+}
+
+.container_contacta h3{
+    font-size: 20px;
+    padding-left: 150px;
+    text-indent: 2em hanging;
+}
+
+.carta{
+    margin-top: 25%;
+}
+
+.carta_2{
+    margin-top: 14%;
+}
+
+.carta img{    
+    margin: 20px;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.carta_2 img{
+    float: right;    
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+ 
+.carta img:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+}
+
+.carta_2 img:hover{
+    margin-top: 1px;   
+}
+
+form{
+    margin-top: 20px;
+    background-color:black;
+    width: 90%;
+    max-width: 400px;
+    padding: 3.5rem 1.5rem;
+    border-radius: 1rem; 
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.container_form{
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 100%;
+    gap: 1em;
+}
+
+.input_form{
+    font-size: 1rem;
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid var(--color-princ);    
+    border-radius: 0.2em;
+    color: white;
+}
+
+.message{
+    height: 200px;
+    resize: none;
+    padding: .8em 1em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.input_enviar{
+    font-size: 1rem;
+    padding: .5em 1em;
+    background-color: yellowgreen;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: .2em;
+    cursor: pointer;
+}  
+
+
+
+/* -----------------Estilos footer-----------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden ;
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem var(--color-princ);
+}
+
+.social img{
+    display: inline-block;   
+    margin: 0 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.social img:hover{
+    transform: translate(-3px) scale(1.15);
+    box-shadow: 0 5px 5px 0px var(--color-secun);
+    filter: none;    
+}
+
+.firma{   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+
+
+@media (max-width:450px){
+    .form{
+        padding: 3.5em 1em;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
