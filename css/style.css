@@ -1,5 +1,6 @@
 *{
     background-color: black;
+    font-family: roboto;
 }
 
 html{
@@ -8,23 +9,45 @@ html{
     --color-terce:rgb(154, 205, 50);
 }
 
+
+
 body{
     display: flex;
     justify-content: center;
     padding: 0 0;
 }
-
-.container_header{
-    width: 100%;
-    height: 90%;  
-    padding-top: 15px;
+header {
     display: flex;
-    justify-content:space-between ;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+header img {
+  
+   display: block;
+   width: 100%;
+   margin: auto;
+    }
+
+
+
+
+.container_header{ 
+    display: flex;
+    justify-content:space-between ;      
+    height: 40%;  
+    padding-top: 15px;   
+}
+
+#page{    
+    width: 63%;
+    height: auto;
 }
 
 nav{
     position: sticky;
-    overflow: hidden ;
+    top: 0;
+    overflow: hidden ;    
     box-shadow: 0.3125rem 0.3125rem 0.9375rem var(--color-princ); 
 }
 
@@ -50,6 +73,69 @@ nav{
     color: var(--color-princ);
 
 }
+
+/*------------------Sobre Mi-------------------------------*/
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    
+}
+
+.sobremi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    
+}
+
+h1{ display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--color-terce);
+    font-size: 60px;
+}
+
+h2 {
+    display: block;
+    color: var(--color-princ); 
+    font-size: 50px;
+}
+
+h3 {
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+.foto img{
+    padding-top: 150px;
+    padding-left: 100px;
+    width: 70%;   
+    border-radius: 50%;   
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.descripcion h1{
+    font-size: 45px;
+    color:var(--color-secun); 
+    text-align: center;   
+}
+
+.descripcion p{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+
 /*------------------Estilos Contacta-------------------------*/
 
 .container_index2{
@@ -135,6 +221,117 @@ form{
     border-radius: .2em;
     cursor: pointer;
 }  
+/*----------------Estilos Newsletter--------------------------*/
+
+.container-news{
+    display: grid;  
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    gap: 25px;
+    align-content: center;  
+}
+
+.retos{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.retos img{
+    width: 80%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.retos img:hover{
+    transform: scale(1.1);
+}
+
+.h2_retos{
+    font-size:30px ;
+    width: 50%;
+    color: var(--color-terce);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cursos{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.cursos img{
+    width: 80%;  
+    height: 180%;  
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.cursos img:hover{
+    transform: scale(1.1);
+}
+
+.h2_cursos{
+    font-size:30px ;
+    width: 50%;       
+    color: var(--color-secun);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.lenguaje{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.lenguaje img{
+    width: 80%;
+    height: 65%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.lenguaje img:hover{
+    transform: scale(1.1);
+}
+
+.h2_leng{
+    font-size:30px ;
+    width: 50%;
+    color: var(--color-princ);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.js{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.js img{
+    width: 80%;
+    height: 65%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.js img:hover{
+    transform: scale(1.1);
+}
+
+.h2_js{
+    font-size:30px ;
+    width: 50%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+/*------------------Estilos Proyectos-----------------------*/  
 
 
 
@@ -183,8 +380,7 @@ footer {
         display: none;
     }
 
-    .container_form{
-        
+    .container_form{        
         margin-right: 10px;
     }
 
@@ -196,6 +392,11 @@ footer {
     body{
         font-size:10px;
     }
+
+    .foto img{
+        width: 20%;
+        padding-right: 15%;
+   }
 
     .social img{ 
         margin: 0 15px;
